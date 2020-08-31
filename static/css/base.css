@@ -1,0 +1,59 @@
+html{
+    height: 100%;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+/* https://css-tricks.com/snippets/css/text-rotation/ */
+.rotate {
+  transform: rotate(-90deg);
+  /* Legacy vendor prefixes that you probably don't need... */
+  /* Safari */
+  -webkit-transform: rotate(-90deg);
+  /* Firefox */
+  -moz-transform: rotate(-90deg);
+  /* IE */
+  -ms-transform: rotate(-90deg);
+  /* Opera */
+  -o-transform: rotate(-90deg);
+  /* Internet Explorer */
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+}
+
+.rotate{
+  /* positioning */
+  display: inline-block;
+  float: right;
+  right: 0;
+} 
+
+.logo .rotate{
+     /* positioning */
+  display: inline-block;
+  float: left;
+  left: 0; 
+  cursor: pointer;
+}
+
+.wrapper li{
+    text-align: right;
+    list-style-type: none;
+    cursor: pointer;
+}
+
+#topnav{
+    margin: 3rem 2rem 3rem;
+}
+
+.shopping-bag{
+ padding-top: 20px;
+}
+
+.subheading-styling{
+    text-decoration: underline;
+    font-family: 'Bebas Neue', cursive;
+    text-transform: uppercase;
+    color: #000;
+}
