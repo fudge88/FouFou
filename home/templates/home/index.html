@@ -1,8 +1,22 @@
 {% extends "base.html" %}
 {% load static %}
 
-{% block content %}
+{% block page_header %}
+    <div class="header"></div>
+{% endblock %}
 
-<h1 class="dispaly-4">it works</h1>
+{% block content %}
+<div class="container h-70">
+    <div class="row w-100">
+        <div class="col-8 col-md-6">
+            <h1 class="display-3 text-uppercase">
+                Be badass with a good ass.
+            </h1>
+            <h5>
+                <a href="" class="text-uppercase">Achieve your goals today</a>
+            </h5>
+        </div>
+    </div>
+</div>
 
 {% endblock %}
