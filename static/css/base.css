@@ -30,21 +30,20 @@ body{
 } 
 
 .logo .rotate{
-     /* positioning */
   display: inline-block;
   float: left;
-  left: 0; 
   cursor: pointer;
+  margin-top: 5rem;
+  font-family: 'Pacifico', cursive;
+  font-size: x-large;
+  color: #000;
 }
 
 .wrapper li{
     text-align: right;
     list-style-type: none;
     cursor: pointer;
-}
-
-#topnav{
-    margin: 3rem 2rem 3rem;
+    line-height: 2rem;
 }
 
 .shopping-bag{
@@ -55,5 +54,18 @@ body{
     text-decoration: underline;
     font-family: 'Bebas Neue', cursive;
     text-transform: uppercase;
+    font-size: x-large;
     color: #000;
+}
+
+.subheading-position{
+    line-height: 0px;
+}
+
+.fixed-top{
+    margin-top: 2rem;
+}
+
+ul.rotate.subheading-styling {
+    margin-right: 4rem;
 }

@@ -17,7 +17,7 @@
     <!-- Bootstrap CSS -->
     {% block corecss %}
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Pacifico&family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{% static 'css/base.css' %}">
     {% endblock %}
 
@@ -42,23 +42,21 @@
   </head>
   <body>
     <header class="container-fluid fixed-top">
-    <div id="topnav" class="row navbar-positioning pt-lg-2 d-none d-lg-flex">
-    <!-- <div class="col-12 col-md-6"> -->
-    <div class="col wrapper">
-    <div class="logo">
-        <a href="{% url 'home' %}">
-            <div class="rotate">LOGO</div>
-        </a>
-    </div>
-        <ul class="rotate subheading-styling">
-            <li a href="">Products</li>
-            <li a href="">Treatments</li>
-            <li a href="">My Account</li>
-            <li a href="" class="shopping-bag" >My Bag</li>
-        </ul>
-    </div>
-        
-    </div>
+        <div id="topnav" class="row navbar-positioning d-none d-md-block">
+            <div class="col wrapper">
+                <div class="logo">
+                    <a href="{% url 'home' %}">
+                        <h1 class="rotate">FouFou Aesthetics.</h1>
+                    </a>
+                </div>
+                <ul class="rotate subheading-styling">
+                    <li a href="">Products</li> <!--painfree wax, face masks-->
+                    <li a href="">Treatments</li> <!--fat freeze, facial, hamam- hair removal, wax, laser -->
+                    <li a href="">My Account</li> <!--register, login-->
+                    <li a href="" class="shopping-bag" >My Bag</li>
+                </ul>
+            </div>
+        </div>
     </header>
 
     <!-- flash messages -->
