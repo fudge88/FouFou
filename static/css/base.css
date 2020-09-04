@@ -81,13 +81,16 @@ a.active,a:hover{
   /* Internet Explorer */
   filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
 }
-
+nav .mobile-shopping-bag{
+    display: none;
+}
 }
 
 @media (max-width: 858px){
   .checkbtn{
     display: block;
     margin: 10px 30px;
+    z-index: 1020;
   }
   ul{
     position: fixed;
@@ -129,6 +132,13 @@ label.logo{
   }
 nav {
     padding: 0;
+}
+nav .mobile-shopping-bag{
+    display: block;
+    float: right;
+    padding: 60px 2px;
+    margin-right: -60px;
+    font-size: xx-large;
 }
 }
 
