@@ -37,6 +37,7 @@
 
     <!-- incase of extra js -->
     {% block extra_js %}
+    
     {% endblock %}
 
     <title>FouFou Aesthetics{% block extra_title %}{% endblock %}</title>
@@ -45,9 +46,58 @@
 
 <!DOCTYPE html>
 <!-- Created By CodingNepal -->
+<nav>
+      <div class="nav-center">
+        <!-- nav header -->
+        <div class="nav-header">
+          <img src="{% static 'media/FF-logo.png' %}" class="logo" alt="logo" />
+          <button class="nav-toggle">
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+        <!-- links -->
+        <ul class="links">
+          <li>
+            <a href="about.html">Shop</a>
+          </li>
+          <li>
+            <a href="projects.html">Treatments</a>
+          </li>
+            <li>
+            <a href="contact.html">My Account</a>
+          </li>
+          <li>
+            <a href="contact.html">My Bag</a>
+          </li>
+        </ul>
+        <!-- social media -->
+        <ul class="social-icons">
+          <li>
+            <a href="https://www.facebook.com">
+              <i class="fab fa-facebook-square"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.snapchat.com">
+              <i class="fab fa-snapchat-square"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com">
+              <i class="fab fa-instagram"></i>
+            </a>
+          </li>
 
+          <li>
+            <a href="https://www.tiktok.com">
+              <i class="fab fa-tiktok"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+</nav>
 
-  <body>
+  <!-- <body>
     <nav class="fixed-top">
 
       <input type="checkbox" id="check">
@@ -91,55 +141,8 @@
       </ul>
     </nav>
     <section></section>
-  </body>
+  </body> -->
 
-    <!-- <header class="container-fluid fixed-top">
-        <div id="topnav" class="row d-none d-md-block d-none d-lg-block">
-
-                        <div class="col"> -->
-                            <!-- logo -->
-                            <!-- <div class="logo">
-                                <a href="{% url 'home' %}">
-                                    <h1 class="">FouFou Aesthetics.</h1>
-                                </a>
-                            </div>  -->
-                            <!-- navlinks -->
-                            <!-- <div class="container pt-3">
-                            <div class="nav-links rotate link-font-style">
-                                <div class="link-spacing" a href="">About</div> 
-                                <div class="link-spacing" a href="">Products</div> -->
-                                    <!-- <div class="sublinks">
-                                        <ul>
-                                            <li>Skin Care</li>
-                                            <li>Hair Removal</li>
-                                            <li>Wellness</li>
-                                        </ul>
-                                    </div> -->
-                                <!-- <div class="link-spacing" a href="">Treatments</div> -->
-                                    <!-- <div class="sublinks">
-                                        <ul>
-                                            <li>Hair Removal</li>
-                                            <li>Beauty Treatments</li>
-                                            <li>Skin Treatments</li>
-                                            <li>Body Sculpturing</li>
-                                        </ul>
-                                    </div> -->
-                                <!-- <div class="link-spacing" a href="">My Account</div> -->
-                                    <!-- <div class="sublinks">
-                                        <ul>
-                                            <li>Login</li>
-                                            <li>Register</li>
-                                        </ul>
-                                    </div> -->
-                                <!-- shopping bag -->
-                                <!-- <div a href="" class="shopping-bag link-spacing" ><i class="fas fa-circle mr-2"></i>My Bag</div>
-                            </div>
-                            </div>
-                    </div>
-                </button>
-            </nav>
-        </div>
-    </header>   -->
 
     <!-- flash messages -->
     {% if messages %}
@@ -156,6 +159,7 @@
 
     <!-- JS to load at end of body -->
     {% block postload_js %}
+    <script src="{% static 'js/base.js' %}"></script>
     {% endblock %}
 
 <div class="container-fluid">
