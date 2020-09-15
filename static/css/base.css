@@ -1,27 +1,11 @@
-
-
-/* https://css-tricks.com/snippets/css/text-rotation/ */
-/* 
-.background{
-    background-image: linear-gradient(to right, #01132e, #001a4f, #001f70, #001f90, #0016ae);
-    height: 60vh;
-} */
-
-/*
-=============== 
-Variables
-===============
-*/
-
-:root {
-  --transition: all 0.3s linear;
+ --transition: all 0.3s linear;
   --spacing: 0.1rem;
   --radius: 0.25rem;
+  --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
   --max-width: 1170px;
   --fixed-width: 620px;
 }
-/*
-
 /*
 =============== 
 Global Styles
@@ -36,9 +20,9 @@ Global Styles
   box-sizing: border-box;
 }
 body {
- font-family: 'Roboto', sans-serif;
-  background: grey;
-  color: black;
+  font-family: var(--ff-secondary);
+  background: var(--clr-grey-10);
+  color: var(--clr-grey-1);
   line-height: 1.5;
   font-size: 0.875rem;
 }
@@ -52,10 +36,11 @@ h1,
 h2,
 h3,
 h4 {
+  letter-spacing: var(--spacing);
   text-transform: capitalize;
   line-height: 1.25;
   margin-bottom: 0.75rem;
-  font-family: 'Bebas Neue', cursive;
+  font-family: var(--ff-primary);
 }
 h1 {
   font-size: 3rem;
@@ -71,6 +56,7 @@ h4 {
 }
 p {
   margin-bottom: 1.25rem;
+  color: var(--clr-grey-5);
 }
 @media screen and (min-width: 800px) {
   h1 {
@@ -78,6 +64,7 @@ p {
   }
   h2 {
     font-size: 2.5rem;
+    margin-top: 1rem;
   }
   h3 {
     font-size: 1.75rem;
@@ -118,13 +105,14 @@ main {
   place-items: center;
 }
 
-
-/* =============== 
+/*
+=============== 
 Navbar
-=============== */
-
+===============
+*/
 nav {
-  background: transparent;
+  background: var(--clr-white);
+  box-shadow: var(--light-shadow);
 }
 .nav-header {
   display: flex;
@@ -134,21 +122,21 @@ nav {
 }
 .nav-toggle {
   font-size: 1.5rem;
-  color: orange;
+  color: var(--clr-primary-5);
   background: transparent;
   border-color: transparent;
   transition: var(--transition);
   cursor: pointer;
 }
 .nav-toggle:hover {
-  color: green;
+  color: var(--clr-primary-1);
   transform: rotate(90deg);
 }
 .logo {
-  height: 5rem;
+  height: 40px;
 }
 .links a {
-  color: blue;
+  color: var(--clr-grey-3);
   font-size: 1rem;
   text-transform: capitalize;
   letter-spacing: var(--spacing);
@@ -157,8 +145,8 @@ nav {
   transition: var(--transition);
 }
 .links a:hover {
-  background: purple;
-  color: red;
+  background: var(--clr-primary-8);
+  color: var(--clr-primary-5);
   padding-left: 1.5rem;
 }
 .social-icons {
@@ -183,6 +171,8 @@ nav {
   }
   .nav-header {
     padding: 0;
+    display: none;
+    /* visibility: hidden; */
   }
   .nav-toggle {
     display: none;
@@ -195,7 +185,7 @@ nav {
     padding: 0;
     margin: 0 0.5rem;
   }
-    .links a:hover {
+  .links a:hover {
     padding: 0;
     background: transparent;
   }
@@ -204,10 +194,20 @@ nav {
   }
   .social-icons a {
     margin: 0 0.5rem;
-    color: hotpink;
+    color: var(--clr-primary-5);
     transition: var(--transition);
   }
   .social-icons a:hover {
-    color: yellow;
+    color: var(--clr-primary-7);
   }
 }
+
+.social-icons-left a{
+    color: #000;
+}
+
+@media screen and (max-width: 799px) {
+.logo-header{
+    display: none;
+}
+{}
