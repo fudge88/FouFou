@@ -20,9 +20,9 @@ Global Styles
   box-sizing: border-box;
 }
 body {
-  font-family: var(--ff-secondary);
-  background: var(--clr-grey-10);
-  color: var(--clr-grey-1);
+  font-family: 'Roboto', sans-serif;
+  background: #9e9e9e;
+  color: white;
   line-height: 1.5;
   font-size: 0.875rem;
 }
@@ -36,11 +36,10 @@ h1,
 h2,
 h3,
 h4 {
-  letter-spacing: var(--spacing);
   text-transform: capitalize;
   line-height: 1.25;
   margin-bottom: 0.75rem;
-  font-family: var(--ff-primary);
+  font-family: 'Bebas Neue', cursive;
 }
 h1 {
   font-size: 3rem;
@@ -105,39 +104,57 @@ main {
   place-items: center;
 }
 
+.promo-strip{
+    display: flex;
+    justify-content: center;
+    background-image: linear-gradient(to right, #f1acfb, #c9c0ff, #a4d0ff, #90dcff, #95e4f9);
+    color: white;
+    margin: 0;
+}
+
+
 /*
 =============== 
 Navbar
 ===============
 */
 nav {
-  background: var(--clr-white);
-  box-shadow: var(--light-shadow);
+  background: #95e4f9;
+  /* box-shadow: var(--light-shadow); */
 }
 .nav-header {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 1rem;
+
+}
+
+.logo-header-nav{
+    background-color: #95e4f9;
 }
 .nav-toggle {
   font-size: 1.5rem;
-  color: var(--clr-primary-5);
+  color: #000;
   background: transparent;
   border-color: transparent;
   transition: var(--transition);
   cursor: pointer;
 }
 .nav-toggle:hover {
-  color: var(--clr-primary-1);
+  color: pink;
   transform: rotate(90deg);
 }
 .logo {
   height: 40px;
 }
+.logo-header h2{
+    font-family: 'Pacifico', cursive;
+}
 .links a {
-  color: var(--clr-grey-3);
-  font-size: 1rem;
+  font-family: 'Bebas Neue', cursive;
+  color: #000;
+  font-size: 1.5rem;
   text-transform: capitalize;
   letter-spacing: var(--spacing);
   display: block;
@@ -167,7 +184,8 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 1rem;
+    padding-top: 1rem;
+    background-color: #95e4f9;
   }
   .nav-header {
     padding: 0;

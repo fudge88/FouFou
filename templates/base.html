@@ -43,7 +43,16 @@
     <title>FouFou Aesthetics{% block extra_title %}{% endblock %}</title>
   </head>
   <body>
-    <div id="row">
+  <div class="row">
+    <div class="col">
+        <ul class="promo-strip">
+            <li class="pr-5"><i class="fas fa-truck"></i> Free delivery on orders over £{{ free_delivery_threshold }}!</li>
+            <li class="pr-5"><i class="fas fa-check"></i> 30% off all supplements!</li>
+            <li><i class="fas fa-mobile-alt"></i> Become a memeber today.</li>
+        </ul>
+    </div>
+  </div>
+    <div class="row logo-header-nav">
         <div class="col text-center logo-header">
             <h2>FouFou Aesthetics</h2>
         </div>
