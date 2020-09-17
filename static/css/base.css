@@ -21,8 +21,7 @@ Global Styles
 }
 body {
   font-family: 'Roboto', sans-serif;
-  background: #9e9e9e;
-  color: white;
+  background: turquoise;
   line-height: 1.5;
   font-size: 0.875rem;
 }
@@ -57,13 +56,21 @@ p {
   margin-bottom: 1.25rem;
   color: var(--clr-grey-5);
 }
+/* 
+search */
+
+.form-control{
+    border-radius: 50px;
+    border: 2px solid #000;
+}
+}
 @media screen and (min-width: 800px) {
   h1 {
     font-size: 4rem;
   }
   h2 {
     font-size: 2.5rem;
-    margin-top: 1rem;
+    margin-top: 1.5rem;
   }
   h3 {
     font-size: 1.75rem;
@@ -107,8 +114,8 @@ main {
 .promo-strip{
     display: flex;
     justify-content: center;
-    background-image: linear-gradient(to right, #f1acfb, #c9c0ff, #a4d0ff, #90dcff, #95e4f9);
-    color: white;
+    background-color: yellow;
+    color: #000;
     margin: 0;
 }
 
@@ -119,7 +126,7 @@ Navbar
 ===============
 */
 nav {
-  background: #95e4f9;
+  background: transparent;
   /* box-shadow: var(--light-shadow); */
 }
 .nav-header {
@@ -130,19 +137,23 @@ nav {
 
 }
 
-.logo-header-nav{
-    background-color: #95e4f9;
+.lg-logo-header{
+    background-color: transparent;
+}
+.sm-logo-header{
+font-family: 'Pacifico', cursive;
+color: white;
 }
 .nav-toggle {
   font-size: 1.5rem;
-  color: #000;
+  color: p;
   background: transparent;
   border-color: transparent;
   transition: var(--transition);
   cursor: pointer;
 }
 .nav-toggle:hover {
-  color: pink;
+  color: yellow;
   transform: rotate(90deg);
 }
 .logo {
@@ -150,10 +161,12 @@ nav {
 }
 .logo-header h2{
     font-family: 'Pacifico', cursive;
+    color: white;
+    margin-top: 1rem;
 }
 .links a {
   font-family: 'Bebas Neue', cursive;
-  color: #000;
+  color: yellow;
   font-size: 1.5rem;
   text-transform: capitalize;
   letter-spacing: var(--spacing);
@@ -184,8 +197,8 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-top: 1rem;
-    background-color: #95e4f9;
+    background-color: transparent;
+    font-family: 'Pacifico', cursive;
   }
   .nav-header {
     padding: 0;
@@ -212,7 +225,8 @@ nav {
   }
   .social-icons a {
     margin: 0 0.5rem;
-    color: var(--clr-primary-5);
+    color: #000;
+    font-size: larger;
     transition: var(--transition);
   }
   .social-icons a:hover {
@@ -220,12 +234,17 @@ nav {
   }
 }
 
-.social-icons-left a{
+/* .social-icons-left a{
     color: #000;
-}
+} */
 
 @media screen and (max-width: 799px) {
 .logo-header{
     display: none;
 }
-{}
+.promo-strip{
+    display: none;
+}
+
+
+
